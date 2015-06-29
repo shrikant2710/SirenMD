@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIcons</key>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
+	<key>CFBundleIdentifier</key>
+	<string>Com.SirenMD.SirenMDDev</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>SirenMD</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array/>
+	<key>CFBundleVersion</key>
+	<string>0.2</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>application uses your current location to get your address.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Bold_2.ttf</string>
+		<string>OpenSans-BoldItalic_2.ttf</string>
+		<string>OpenSans-ExtraBold_1.ttf</string>
+		<string>OpenSans-ExtraBoldItalic_1.ttf</string>
+		<string>OpenSans-Italic_2.ttf</string>
+		<string>OpenSans-Light_1.ttf</string>
+		<string>OpenSans-LightItalic_1.ttf</string>
+		<string>OpenSans-Regular_2.ttf</string>
+		<string>OpenSans-Semibold_1.ttf</string>
+		<string>OpenSans-SemiboldItalic_1.ttf</string>
+		<string>Opal.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		186E505819A954A300A8A2DF /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 186E505B19A954A300A8A2DF /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				186E505C19A954D100A8A2DF /* ShellScript */,
+				181B740619A96C7F00F5C1A2 /* Copy Files */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+		2B5528D319B9365E00B3900E /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2B5528EA19B9365E00B3900E /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				2B5528D419B9365E00B3900E /* ShellScript */,
+				2B5528D519B9365E00B3900E /* Copy Files */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = UniversalLib;
+		};
+		372C202D1A54A97B00FA90F0 /* Aggregate Lib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 372C202E1A54A97B00FA90F0 /* Build configuration list for PBXAggregateTarget "Aggregate Lib" */;
+			buildPhases = (
+				372C20311A54A98C00FA90F0 /* ShellScript */,
+				372C20321A54A99500FA90F0 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = "Aggregate Lib";
+			productName = "Aggregate Lib";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		181B73BA19A9622200F5C1A2 /* TVConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186A18D619A9606600570091 /* TVConstants.h */; };
+		181B740819A96CD200F5C1A2 /* TrueVault.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDB519A51FE5009D33EC /* TrueVault.h */; };
+		181B740919A96CD600F5C1A2 /* TVObject.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDD619A5202B009D33EC /* TVObject.h */; };
+		181B740A19A96CDA00F5C1A2 /* TVFile.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDD819A5202B009D33EC /* TVFile.h */; };
+		181B740B19A96CDE00F5C1A2 /* TVQuery.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDDA19A5202B009D33EC /* TVQuery.h */; };
+		181B740C19A96CE300F5C1A2 /* TVSort.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDEA19A550BB009D33EC /* TVSort.h */; };
+		181B740D19A96CE900F5C1A2 /* TVFilter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDE619A53FCF009D33EC /* TVFilter.h */; };
+		181B740E19A96CF200F5C1A2 /* TVConstants.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 186A18D619A9606600570091 /* TVConstants.h */; };
+		186E505F19A9587A00A8A2DF /* TVObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDD619A5202B009D33EC /* TVObject.h */; };
+		186E506019A958A500A8A2DF /* TVFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDD819A5202B009D33EC /* TVFile.h */; };
+		186E506119A958AB00A8A2DF /* TVQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDDA19A5202B009D33EC /* TVQuery.h */; };
+		186E506219A958B100A8A2DF /* TVSort.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDEA19A550BB009D33EC /* TVSort.h */; };
+		186E506319A958C200A8A2DF /* TVFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDE619A53FCF009D33EC /* TVFilter.h */; };
+		1872DF5319BBE0C7007A3378 /* TVIndexed.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B221B3719A7171F00BCD7B6 /* TVIndexed.h */; };
+		1872DF5419BBE0D0007A3378 /* TVIndexed.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B221B3719A7171F00BCD7B6 /* TVIndexed.h */; };
+		1877F2F419B8F46F0028A8C0 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F2EA19B8F46F0028A8C0 /* RNCryptor.m */; };
+		1877F2F719B8F46F0028A8C0 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F2EC19B8F46F0028A8C0 /* RNCryptorEngine.m */; };
+		1877F2FA19B8F46F0028A8C0 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F2EE19B8F46F0028A8C0 /* RNDecryptor.m */; };
+		1877F2FD19B8F46F0028A8C0 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F2F019B8F46F0028A8C0 /* RNEncryptor.m */; };
+		187CAD0619A5FE0100E64984 /* TVHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CAD0519A5FE0100E64984 /* TVHelper.m */; };
+		187CAD0919A5FEFB00E64984 /* TVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CAD0819A5FEFB00E64984 /* TVRequest.m */; };
+		18E477B019A69FF000D4062C /* TVRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E477AF19A69FF000D4062C /* TVRequestManager.m */; };
+		2B1ACDB119A51FE5009D33EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1ACDB019A51FE5009D33EC /* Foundation.framework */; };
+		2B1ACDB619A51FE5009D33EC /* TrueVault.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDB519A51FE5009D33EC /* TrueVault.h */; };
+		2B1ACDB819A51FE5009D33EC /* TrueVault.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ACDB719A51FE5009D33EC /* TrueVault.m */; };
+		2B1ACDDC19A5202B009D33EC /* TVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ACDD719A5202B009D33EC /* TVObject.m */; };
+		2B1ACDDE19A5202B009D33EC /* TVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ACDD919A5202B009D33EC /* TVFile.m */; };
+		2B1ACDE019A5202B009D33EC /* TVQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ACDDB19A5202B009D33EC /* TVQuery.m */; };
+		2B1ACDE819A53FCF009D33EC /* TVFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ACDE719A53FCF009D33EC /* TVFilter.m */; };
+		2B1ACDEC19A550BB009D33EC /* TVSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ACDEB19A550BB009D33EC /* TVSort.m */; };
+		2B221B3E19A71A2B00BCD7B6 /* TVSchemaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B221B3D19A71A2B00BCD7B6 /* TVSchemaHelper.m */; };
+		2B44034719B84379009E00B8 /* TVPendingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B44034519B84379009E00B8 /* TVPendingRequest.m */; };
+		2B45A30F19B8E9F000A5C0CF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B45A30D19B8E9F000A5C0CF /* Reachability.m */; };
+		2B45A31519B8EB7B00A5C0CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B45A31419B8EB7B00A5C0CF /* SystemConfiguration.framework */; };
+		2B5528D919B9365E00B3900E /* TVConstants.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 186A18D619A9606600570091 /* TVConstants.h */; };
+		2B5528DA19B9365E00B3900E /* TVFilter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDE619A53FCF009D33EC /* TVFilter.h */; };
+		2B5528E219B9365E00B3900E /* TVSort.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDEA19A550BB009D33EC /* TVSort.h */; };
+		2B5528E419B9365E00B3900E /* TVQuery.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDDA19A5202B009D33EC /* TVQuery.h */; };
+		2B5528E519B9365E00B3900E /* TVFile.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDD819A5202B009D33EC /* TVFile.h */; };
+		2B5528E619B9365E00B3900E /* TVObject.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDD619A5202B009D33EC /* TVObject.h */; };
+		2B5528E919B9365E00B3900E /* TrueVault.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2B1ACDB519A51FE5009D33EC /* TrueVault.h */; };
+		2BC8211819A7C8FB0086B759 /* TVSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8211719A7C8FB0086B759 /* TVSchema.m */; };
+		2BC8211C19A7C92E0086B759 /* TVSchemaField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8211B19A7C92E0086B759 /* TVSchemaField.m */; };
+		372C20331A54B04700FA90F0 /* TrueVault.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDB519A51FE5009D33EC /* TrueVault.h */; };
+		372C20341A54B04C00FA90F0 /* TVFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDD819A5202B009D33EC /* TVFile.h */; };
+		372C20351A54B05200FA90F0 /* TVObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDD619A5202B009D33EC /* TVObject.h */; };
+		372C20361A54B05600FA90F0 /* TVQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDDA19A5202B009D33EC /* TVQuery.h */; };
+		372C20371A54B05900FA90F0 /* TVFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDE619A53FCF009D33EC /* TVFilter.h */; };
+		372C20381A54B05D00FA90F0 /* TVSort.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1ACDEA19A550BB009D33EC /* TVSort.h */; };
+		372C20401A54B08700FA90F0 /* TVConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 186A18D619A9606600570091 /* TVConstants.h */; };
+		372C20431A54B09400FA90F0 /* TVIndexed.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B221B3719A7171F00BCD7B6 /* TVIndexed.h */; };
+		37FC10AE1A54CEB2002F6F1F /* README.md in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1872DF5919BC2204007A3378 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		181B740619A96C7F00F5C1A2 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1872DF5419BBE0D0007A3378 /* TVIndexed.h in Copy Files */,
+				181B740E19A96CF200F5C1A2 /* TVConstants.h in Copy Files */,
+				181B740D19A96CE900F5C1A2 /* TVFilter.h in Copy Files */,
+				181B740C19A96CE300F5C1A2 /* TVSort.h in Copy Files */,
+				181B740B19A96CDE00F5C1A2 /* TVQuery.h in Copy Files */,
+				181B740A19A96CDA00F5C1A2 /* TVFile.h in Copy Files */,
+				181B740919A96CD600F5C1A2 /* TVObject.h in Copy Files */,
+				181B740819A96CD200F5C1A2 /* TrueVault.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1ACDAB19A51FE5009D33EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1872DF5319BBE0C7007A3378 /* TVIndexed.h in CopyFiles */,
+				181B73BA19A9622200F5C1A2 /* TVConstants.h in CopyFiles */,
+				186E506319A958C200A8A2DF /* TVFilter.h in CopyFiles */,
+				186E506219A958B100A8A2DF /* TVSort.h in CopyFiles */,
+				186E506119A958AB00A8A2DF /* TVQuery.h in CopyFiles */,
+				186E506019A958A500A8A2DF /* TVFile.h in CopyFiles */,
+				186E505F19A9587A00A8A2DF /* TVObject.h in CopyFiles */,
+				2B1ACDB619A51FE5009D33EC /* TrueVault.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B5528D519B9365E00B3900E /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				2B5528D919B9365E00B3900E /* TVConstants.h in Copy Files */,
+				2B5528DA19B9365E00B3900E /* TVFilter.h in Copy Files */,
+				2B5528E219B9365E00B3900E /* TVSort.h in Copy Files */,
+				2B5528E419B9365E00B3900E /* TVQuery.h in Copy Files */,
+				2B5528E519B9365E00B3900E /* TVFile.h in Copy Files */,
+				2B5528E619B9365E00B3900E /* TVObject.h in Copy Files */,
+				2B5528E919B9365E00B3900E /* TrueVault.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372C20321A54A99500FA90F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${TARGET_BUILD_DIR}/../TrueVaultLibrary";
+			dstSubfolderSpec = 0;
+			files = (
+				37FC10AE1A54CEB2002F6F1F /* README.md in CopyFiles */,
+				372C20431A54B09400FA90F0 /* TVIndexed.h in CopyFiles */,
+				372C20401A54B08700FA90F0 /* TVConstants.h in CopyFiles */,
+				372C20381A54B05D00FA90F0 /* TVSort.h in CopyFiles */,
+				372C20371A54B05900FA90F0 /* TVFilter.h in CopyFiles */,
+				372C20361A54B05600FA90F0 /* TVQuery.h in CopyFiles */,
+				372C20351A54B05200FA90F0 /* TVObject.h in CopyFiles */,
+				372C20341A54B04C00FA90F0 /* TVFile.h in CopyFiles */,
+				372C20331A54B04700FA90F0 /* TrueVault.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		186A18D619A9606600570091 /* TVConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVConstants.h; sourceTree = "<group>"; };
+		1872DF5919BC2204007A3378 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1877F2E719B8F46F0028A8C0 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		1877F2E819B8F46F0028A8C0 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		1877F2E919B8F46F0028A8C0 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		1877F2EA19B8F46F0028A8C0 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		1877F2EB19B8F46F0028A8C0 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		1877F2EC19B8F46F0028A8C0 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		1877F2ED19B8F46F0028A8C0 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		1877F2EE19B8F46F0028A8C0 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		1877F2EF19B8F46F0028A8C0 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		1877F2F019B8F46F0028A8C0 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		187CAD0419A5FE0100E64984 /* TVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHelper.h; sourceTree = "<group>"; };
+		187CAD0519A5FE0100E64984 /* TVHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHelper.m; sourceTree = "<group>"; };
+		187CAD0719A5FEFB00E64984 /* TVRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVRequest.h; sourceTree = "<group>"; };
+		187CAD0819A5FEFB00E64984 /* TVRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVRequest.m; sourceTree = "<group>"; };
+		18E477AE19A69FF000D4062C /* TVRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVRequestManager.h; sourceTree = "<group>"; };
+		18E477AF19A69FF000D4062C /* TVRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVRequestManager.m; sourceTree = "<group>"; };
+		2B1ACDAD19A51FE5009D33EC /* libTrueVault.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrueVault.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1ACDB019A51FE5009D33EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B1ACDB419A51FE5009D33EC /* TrueVault-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrueVault-Prefix.pch"; sourceTree = "<group>"; };
+		2B1ACDB519A51FE5009D33EC /* TrueVault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrueVault.h; sourceTree = "<group>"; };
+		2B1ACDB719A51FE5009D33EC /* TrueVault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrueVault.m; sourceTree = "<group>"; };
+		2B1ACDBE19A51FE5009D33EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2B1ACDC119A51FE5009D33EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2B1ACDD619A5202B009D33EC /* TVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVObject.h; sourceTree = "<group>"; };
+		2B1ACDD719A5202B009D33EC /* TVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVObject.m; sourceTree = "<group>"; };
+		2B1ACDD819A5202B009D33EC /* TVFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVFile.h; sourceTree = "<group>"; };
+		2B1ACDD919A5202B009D33EC /* TVFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVFile.m; sourceTree = "<group>"; };
+		2B1ACDDA19A5202B009D33EC /* TVQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVQuery.h; sourceTree = "<group>"; };
+		2B1ACDDB19A5202B009D33EC /* TVQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVQuery.m; sourceTree = "<group>"; };
+		2B1ACDE219A5206C009D33EC /* TVPrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVPrivateConstants.h; sourceTree = "<group>"; };
+		2B1ACDE619A53FCF009D33EC /* TVFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVFilter.h; sourceTree = "<group>"; };
+		2B1ACDE719A53FCF009D33EC /* TVFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVFilter.m; sourceTree = "<group>"; };
+		2B1ACDEA19A550BB009D33EC /* TVSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSort.h; sourceTree = "<group>"; };
+		2B1ACDEB19A550BB009D33EC /* TVSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSort.m; sourceTree = "<group>"; };
+		2B1ACDF219A5AE57009D33EC /* TVClassHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVClassHelper.h; sourceTree = "<group>"; };
+		2B221B3719A7171F00BCD7B6 /* TVIndexed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVIndexed.h; sourceTree = "<group>"; };
+		2B221B3C19A71A2B00BCD7B6 /* TVSchemaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSchemaHelper.h; sourceTree = "<group>"; };
+		2B221B3D19A71A2B00BCD7B6 /* TVSchemaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSchemaHelper.m; sourceTree = "<group>"; };
+		2B44034419B84379009E00B8 /* TVPendingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVPendingRequest.h; sourceTree = "<group>"; };
+		2B44034519B84379009E00B8 /* TVPendingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVPendingRequest.m; sourceTree = "<group>"; };
+		2B45A30519B8CDCA00A5C0CF /* TVHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHelpers.h; sourceTree = "<group>"; };
+		2B45A30C19B8E9F000A5C0CF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2B45A30D19B8E9F000A5C0CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2B45A31419B8EB7B00A5C0CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2BC8211619A7C8FB0086B759 /* TVSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSchema.h; sourceTree = "<group>"; };
+		2BC8211719A7C8FB0086B759 /* TVSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSchema.m; sourceTree = "<group>"; };
+		2BC8211A19A7C92E0086B759 /* TVSchemaField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSchemaField.h; sourceTree = "<group>"; };
+		2BC8211B19A7C92E0086B759 /* TVSchemaField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSchemaField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B1ACDAA19A51FE5009D33EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B45A31519B8EB7B00A5C0CF /* SystemConfiguration.framework in Frameworks */,
+				2B1ACDB119A51FE5009D33EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1877F2E619B8F46F0028A8C0 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				1877F2E719B8F46F0028A8C0 /* RNCryptor+Private.h */,
+				1877F2E819B8F46F0028A8C0 /* RNCryptor-Prefix.pch */,
+				1877F2E919B8F46F0028A8C0 /* RNCryptor.h */,
+				1877F2EA19B8F46F0028A8C0 /* RNCryptor.m */,
+				1877F2EB19B8F46F0028A8C0 /* RNCryptorEngine.h */,
+				1877F2EC19B8F46F0028A8C0 /* RNCryptorEngine.m */,
+				1877F2ED19B8F46F0028A8C0 /* RNDecryptor.h */,
+				1877F2EE19B8F46F0028A8C0 /* RNDecryptor.m */,
+				1877F2EF19B8F46F0028A8C0 /* RNEncryptor.h */,
+				1877F2F019B8F46F0028A8C0 /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		2B1ACDA419A51FE5009D33EC = {
+			isa = PBXGroup;
+			children = (
+				2B1ACDB219A51FE5009D33EC /* TrueVault */,
+				2B1ACDAF19A51FE5009D33EC /* Frameworks */,
+				2B1ACDAE19A51FE5009D33EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B1ACDAE19A51FE5009D33EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B1ACDAD19A51FE5009D33EC /* libTrueVault.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B1ACDAF19A51FE5009D33EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B45A31419B8EB7B00A5C0CF /* SystemConfiguration.framework */,
+				2B1ACDB019A51FE5009D33EC /* Foundation.framework */,
+				2B1ACDBE19A51FE5009D33EC /* XCTest.framework */,
+				2B1ACDC119A51FE5009D33EC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B1ACDB219A51FE5009D33EC /* TrueVault */ = {
+			isa = PBXGroup;
+			children = (
+				1872DF5919BC2204007A3378 /* README.md */,
+				2B1ACDB519A51FE5009D33EC /* TrueVault.h */,
+				2B1ACDB719A51FE5009D33EC /* TrueVault.m */,
+				2B1ACDD619A5202B009D33EC /* TVObject.h */,
+				2B1ACDD719A5202B009D33EC /* TVObject.m */,
+				2B1ACDD819A5202B009D33EC /* TVFile.h */,
+				2B1ACDD919A5202B009D33EC /* TVFile.m */,
+				2B1ACDDA19A5202B009D33EC /* TVQuery.h */,
+				2B1ACDDB19A5202B009D33EC /* TVQuery.m */,
+				2B1ACDE619A53FCF009D33EC /* TVFilter.h */,
+				2B1ACDE719A53FCF009D33EC /* TVFilter.m */,
+				2B1ACDEA19A550BB009D33EC /* TVSort.h */,
+				2B1ACDEB19A550BB009D33EC /* TVSort.m */,
+				2B44034419B84379009E00B8 /* TVPendingRequest.h */,
+				2B44034519B84379009E00B8 /* TVPendingRequest.m */,
+				187CAD0719A5FEFB00E64984 /* TVRequest.h */,
+				187CAD0819A5FEFB00E64984 /* TVRequest.m */,
+				18E477AE19A69FF000D4062C /* TVRequestManager.h */,
+				18E477AF19A69FF000D4062C /* TVRequestManager.m */,
+				2B221B3C19A71A2B00BCD7B6 /* TVSchemaHelper.h */,
+				2B221B3D19A71A2B00BCD7B6 /* TVSchemaHelper.m */,
+				2BC8211619A7C8FB0086B759 /* TVSchema.h */,
+				2BC8211719A7C8FB0086B759 /* TVSchema.m */,
+				2BC8211A19A7C92E0086B759 /* TVSchemaField.h */,
+				2BC8211B19A7C92E0086B759 /* TVSchemaField.m */,
+				187CAD0419A5FE0100E64984 /* TVHelper.h */,
+				187CAD0519A5FE0100E64984 /* TVHelper.m */,
+				186A18D619A9606600570091 /* TVConstants.h */,
+				2B1ACDE219A5206C009D33EC /* TVPrivateConstants.h */,
+				2B45A30519B8CDCA00A5C0CF /* TVHelpers.h */,
+				2B221B3719A7171F00BCD7B6 /* TVIndexed.h */,
+				2B1ACDF219A5AE57009D33EC /* TVClassHelper.h */,
+				2B45A30B19B8E9E000A5C0CF /* External */,
+				2B1ACDB319A51FE5009D33EC /* Supporting Files */,
+			);
+			path = TrueVault;
+			sourceTree = "<group>";
+		};
+		2B1ACDB319A51FE5009D33EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1ACDB419A51FE5009D33EC /* TrueVault-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B45A30B19B8E9E000A5C0CF /* External */ = {
+			isa = PBXGroup;
+			children = (
+				2B45A30C19B8E9F000A5C0CF /* Reachability.h */,
+				2B45A30D19B8E9F000A5C0CF /* Reachability.m */,
+				1877F2E619B8F46F0028A8C0 /* RNCryptor */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B1ACDAC19A51FE5009D33EC /* TrueVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1ACDD019A51FE5009D33EC /* Build configuration list for PBXNativeTarget "TrueVault" */;
+			buildPhases = (
+				2B1ACDA919A51FE5009D33EC /* Sources */,
+				2B1ACDAA19A51FE5009D33EC /* Frameworks */,
+				2B1ACDAB19A51FE5009D33EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueVault;
+			productName = TrueVault;
+			productReference = 2B1ACDAD19A51FE5009D33EC /* libTrueVault.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B1ACDA519A51FE5009D33EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = TrueVault;
+				TargetAttributes = {
+					372C202D1A54A97B00FA90F0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B1ACDA819A51FE5009D33EC /* Build configuration list for PBXProject "TrueVault" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B1ACDA419A51FE5009D33EC;
+			productRefGroup = 2B1ACDAE19A51FE5009D33EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B1ACDAC19A51FE5009D33EC /* TrueVault */,
+				372C202D1A54A97B00FA90F0 /* Aggregate Lib */,
+				186E505819A954A300A8A2DF /* UniversalLib */,
+				2B5528D319B9365E00B3900E /* Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		186E505C19A954D100A8A2DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target TrueVault ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target TrueVault -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+		2B5528D419B9365E00B3900E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"TrueVault\" \\\n--project-company \"TrueVault\" \\\n--company-id \"com.truevault\" \\\n--docset-atom-filename \"TrueVault.atom\" \\\n--docset-feed-url \"http://metaneer.github.com/\" \\\n--docset-package-url \"http://metaneer.github.com/\" \\\n--docset-fallback-url \"http://metaneer.github.com/\" \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--create-html \\\n--ignore \"*.m\" \\\n--ignore \"RNDecryptor.h\" \\\n--ignore \"RNCryptor.h\" \\\n--ignore \"RNCryptorEngine.h\" \\\n--ignore \"RNCryptor+Private.h\" \\\n--ignore \"RNEncryptor.h\" \\\n--ignore \"Reachability.h\" \\\n--ignore \"TVHelper.h\" \\\n--ignore \"TVPendingRequest.h\" \\\n--ignore \"TVRequestManager.h\" \\\n--ignore \"TVRequest.h\" \\\n--ignore \"TVSchema.h\" \\\n--ignore \"TVSchemaHelper.h\" \\\n--ignore \"TVSchemaField.h\" \\\n--ignore \"TVPrivateConstants.h\" \\\n--ignore \"TVSerializable.h\" \\\n--index-desc \"${PROJECT_DIR}/TrueVault/README.md\" \\\n--output \"../../Help\" \\\n\"${PROJECT_DIR}\"\n";
+		};
+		372C20311A54A98C00FA90F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -workspace /Users/dan/work/repos/truevault-ios-sdk/TrueVaultTestApp/TrueVaultTestApp.xcodeproj/project.xcworkspace -scheme TrueVault -sdk iphonesimulator -configuration Debug\nxcodebuild -workspace /Users/dan/work/repos/truevault-ios-sdk/TrueVaultTestApp/TrueVaultTestApp.xcodeproj/project.xcworkspace -scheme TrueVault -sdk iphoneos -configuration Debug\n\n# make a new output folder\nmkdir -p ${TARGET_BUILD_DIR}/../TrueVaultLibrary\n\n# combine lib files for various platforms into one\nlipo -create \"${TARGET_BUILD_DIR}/../Debug-iphoneos/libTrueVault.a\" \"${TARGET_BUILD_DIR}/../Debug-iphonesimulator/libTrueVault.a\" -output \"${TARGET_BUILD_DIR}/../TrueVaultLibrary/libTrueVault.a\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B1ACDA919A51FE5009D33EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B44034719B84379009E00B8 /* TVPendingRequest.m in Sources */,
+				2BC8211819A7C8FB0086B759 /* TVSchema.m in Sources */,
+				2B1ACDE819A53FCF009D33EC /* TVFilter.m in Sources */,
+				1877F2F719B8F46F0028A8C0 /* RNCryptorEngine.m in Sources */,
+				1877F2FA19B8F46F0028A8C0 /* RNDecryptor.m in Sources */,
+				1877F2F419B8F46F0028A8C0 /* RNCryptor.m in Sources */,
+				1877F2FD19B8F46F0028A8C0 /* RNEncryptor.m in Sources */,
+				187CAD0919A5FEFB00E64984 /* TVRequest.m in Sources */,
+				18E477B019A69FF000D4062C /* TVRequestManager.m in Sources */,
+				2B1ACDE019A5202B009D33EC /* TVQuery.m in Sources */,
+				2B1ACDDE19A5202B009D33EC /* TVFile.m in Sources */,
+				2B1ACDDC19A5202B009D33EC /* TVObject.m in Sources */,
+				2B1ACDEC19A550BB009D33EC /* TVSort.m in Sources */,
+				2B1ACDB819A51FE5009D33EC /* TrueVault.m in Sources */,
+				2B45A30F19B8E9F000A5C0CF /* Reachability.m in Sources */,
+				2BC8211C19A7C92E0086B759 /* TVSchemaField.m in Sources */,
+				2B221B3E19A71A2B00BCD7B6 /* TVSchemaHelper.m in Sources */,
+				187CAD0619A5FE0100E64984 /* TVHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		186E505919A954A300A8A2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		186E505A19A954A300A8A2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B1ACDCE19A51FE5009D33EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		2B1ACDCF19A51FE5009D33EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		2B1ACDD119A51FE5009D33EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TrueVault.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrueVault/TrueVault-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2B1ACDD219A51FE5009D33EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TrueVault.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrueVault/TrueVault-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2B5528EB19B9365E00B3900E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "UniversalLib copy";
+			};
+			name = Debug;
+		};
+		2B5528EC19B9365E00B3900E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "UniversalLib copy";
+			};
+			name = Release;
+		};
+		372C202F1A54A97B00FA90F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 0.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		372C20301A54A97B00FA90F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 0.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		186E505B19A954A300A8A2DF /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186E505919A954A300A8A2DF /* Debug */,
+				186E505A19A954A300A8A2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1ACDA819A51FE5009D33EC /* Build configuration list for PBXProject "TrueVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1ACDCE19A51FE5009D33EC /* Debug */,
+				2B1ACDCF19A51FE5009D33EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1ACDD019A51FE5009D33EC /* Build configuration list for PBXNativeTarget "TrueVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1ACDD119A51FE5009D33EC /* Debug */,
+				2B1ACDD219A51FE5009D33EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B5528EA19B9365E00B3900E /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5528EB19B9365E00B3900E /* Debug */,
+				2B5528EC19B9365E00B3900E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372C202E1A54A97B00FA90F0 /* Build configuration list for PBXAggregateTarget "Aggregate Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372C202F1A54A97B00FA90F0 /* Debug */,
+				372C20301A54A97B00FA90F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B1ACDA519A51FE5009D33EC /* Project object */;
+}
